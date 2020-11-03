@@ -12,6 +12,6 @@ randomLetter = function(n, prob = rep(1/26, 26), wreplacement = FALSE){
   if(n > 26){
     wreplacement <- TRUE
   }
-  iter <- sample(26,n, prob = prob, replace = wreplacement)
+  iter <- sample(26, n, prob = prob, replace = wreplacement)
   letters[iter]
 }
